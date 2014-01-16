@@ -8,9 +8,10 @@ $this->pageTitle=Yii::app()->name;
 
 <div id="gmenu">
 <?php foreach ($Genres as $Genre) : ?>
-	<h6><?php echo CHtml::link($Genre->Name, array('store/browse/','id'=>$Genre->GenreId)) ;?></h6>
+	<h6><?php echo CHtml::link($Genre->Name, array('store/browse/','gid'=>$Genre->GenreId)) ;?></h6>
 <?php endforeach; ?>
 </div>
+<center><img style="width:70%; height:50%"src="<?php echo Yii::app()->request->baseUrl; ?>/images/grunge-music-poster.jpg" alt=""></center>
 <p>Congratulations! You have successfully created your Yii application.</p>
 
 <p>You may change the content of this page by modifying the following two files:</p>

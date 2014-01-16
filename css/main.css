@@ -84,9 +84,10 @@ body
 #gmenu{
 	z-index: 1;
 	position: relative;
-	margin: 10px 5px;
+	margin: 10px 8px;
 	padding: 0 5px;
 	border-right: 1px solid #6399cd;
+	background: white;
 	height: auto;
 	width:10%;
 	float: left;
