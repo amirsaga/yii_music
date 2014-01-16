@@ -27,9 +27,12 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
+		$Criteria = new CDbCriteria();
+		$Criteria->select= "*";
+		$Criteria->order ="Name ASC";
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		$this->render('index',array('Genres'=>Genre::model()->findAll($Criteria),));
 	}
 
 	/**

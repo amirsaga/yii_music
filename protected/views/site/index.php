@@ -4,8 +4,13 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+<h1>Shop <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
+<div id="gmenu">
+<?php foreach ($Genres as $Genre) : ?>
+	<h6><?php echo CHtml::link($Genre->Name, array('store/browse/','id'=>$Genre->GenreId)) ;?></h6>
+<?php endforeach; ?>
+</div>
 <p>Congratulations! You have successfully created your Yii application.</p>
 
 <p>You may change the content of this page by modifying the following two files:</p>

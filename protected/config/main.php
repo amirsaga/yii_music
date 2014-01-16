@@ -52,7 +52,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=yiimusicstore',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '',
+			'password' => 'toor',
 			'charset' => 'utf8',
 		),
 		'errorHandler'=>array(
